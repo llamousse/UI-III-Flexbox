@@ -23,16 +23,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
 	line-height: 1;
-}
-ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -49,18 +41,252 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+  
+.static-navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+nav {
+	width: 880px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+	margin-top: 35px;
+}
+
+nav a:hover {
+	color: rgb(176, 177, 178);
+}
+
+nav div {
+	right: 0;
+	display: flex;
+}
+
+.logo {
+	margin-top: -12px;
+	margin-left: 30px;
+}
+
+.website-wrapper {
+	width: 880px;
+	margin: 130px auto 0 auto;
+	z-index: 1;
+}
+
+.website-wrapper h1 {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	border-bottom: 1px solid black;
+	position: relative;
+	height: 490px;
+	display: flex;
+}
+
+header div {
+	text-align: center;
+	margin: 70px 0 0 85px;
+}
+
+header div h1 {
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+header div a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 4px 48px;
+}
+
+header img {
+	position: absolute;
+	right: 0;
+	margin-top: 25px;
+}
+
+.section-one {
+	display: flex;
+	margin-top: 39px;
+}
+
+.section-one div {
+	width: 430px;
+	height: 100px;
+}
+
+.section-one div p {
+	line-height: 1.16;
+}
+
+.section-one div:first-child {
+	margin-right: 10px;
+}
+
+.middle-img {
+	margin-top: 38px;	
+}
+
+.section-two {
+	border-bottom: 1px solid black;
+	margin-top: 36px;
+	padding-bottom: 47px;
+	display: flex;
+}
+
+.section-two div {
+	width: 280px;
+	margin-right: 10px;
+}
+
+.section-two div p {
+	line-height: 1.16;
+}
+
+address {
+	margin-top: 38px;
+}
+
+address div {
+	line-height: 1.16;
+}
+
+address div span {
+	display: flex;
+	margin: 17px 0 0 0;
+}
+
+footer {
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+footer p {
+	margin-top: 54px;
+	font-size: 14px;
+}
+
+/* /////////////////////////////////////// SERVICES.CSS /////////////////////////////////////// */
+
+.services-wrapper {
+	margin: 80px auto 0 auto;
+}
+
+.services-header-img {
+	display: flex;
+}
+
+.services-head {
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+.services-title {
+	font-size: 28px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.learn-more {
+	margin-top: 15px;
+	padding: 5px;
+	width: 38%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.services-one {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	margin-top: 40px;
+	margin-right: 35px;
+	padding: 25px;
+	width: 48%;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.services-two {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	margin-top: 40px;
+	padding: 25px;
+	width: 48%;
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sections-flex {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+	border-bottom: 2px solid black;
+}
+
+.about-sect {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 47%;
+	float: left;
+}
+
+.about-sect h2, .about-sect p {
+	margin-bottom: 25px;
+}
+
+.list-of-things {
+	margin-left: 20px;
+	list-style-type: square;
+	display: flex;
+	flex-direction: column;
+}
+
+.list-of-things li {
+	padding-bottom: 10px;
+}
+
+.services-info-img {
+	margin-top: 40px;
+	margin-left: 46px;
+}
+
+.services-footer {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
